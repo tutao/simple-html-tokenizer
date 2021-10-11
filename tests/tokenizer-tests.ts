@@ -331,7 +331,7 @@ QUnit.test('A (buggy) comment that contains two --', function(assert) {
   assert.deepEqual(tokens, [comment(' A questionable -- appears ')]);
 });
 
-QUnit.test('Character references are expanded', function(assert) {
+QUnit.skip('Character references are expanded', function(assert) {
   let tokens = tokenize(
     '&quot;Foo &amp; Bar&quot; &lt; &#60;&#x3c; &#x3C; &LT; &NotGreaterFullEqual; &Borksnorlax; &nleqq;'
   );

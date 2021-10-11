@@ -21,7 +21,7 @@ export default class EntityParser {
     }
     matches = entity.match(NAMED);
     if (matches) {
-      return this.named[matches[1]];
+      return this.named[matches[1]] || `&${matches[1]};`;
     }
   }
 }
